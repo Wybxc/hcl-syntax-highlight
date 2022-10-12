@@ -1,0 +1,25 @@
+{
+    "name": "hcl-syntax-highlight",
+    "displayName": "hcl-syntax-highlight",
+    "description": "VSCode Language Support for the HCL hardware description language (used by CSAPP)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hcl",
+            "aliases": ["HCL", "hcl"],
+            "extensions": [".hcl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hcl",
+            "scopeName": "source.hcl",            
+            "path": "./syntaxes/hcl.tmLanguage"            
+        }]
+    }
+}
