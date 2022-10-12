@@ -2,7 +2,7 @@
     "name": "hcl-syntax-highlight",
     "displayName": "hcl-syntax-highlight",
     "description": "VSCode Language Support for the HCL hardware description language (used by CSAPP)",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": "https://github.com/Wybxc/hcl-syntax-highlight",
     "engines": {
         "vscode": "^1.39.0"

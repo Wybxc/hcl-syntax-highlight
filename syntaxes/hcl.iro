@@ -91,12 +91,12 @@ contexts [] {
 
 main : context {
    : push {
-      regex \= (wordsig|boolsig|quote)
+      regex \= (\b(wordsig|boolsig|quote)\b)
       styles[] = .keyword;
       context[] = sig;
    }
    : push {
-      regex \= (word|bool)
+      regex \= (\b(word|bool)\b)
       styles[] = .keyword;
       context[] = circ;
    }
@@ -120,7 +120,7 @@ circ : context {
    }
    : include "none";
    : pattern {
-      regex \= (in)
+      regex \= (\bin\b)
       styles[] = .keyword;
    }
    : pattern {
@@ -148,7 +148,7 @@ value: context {
       styles[] = .punct;
    }
    : pattern {
-      regex \= (in)
+      regex \= (\bin\b)
       styles[] = .keyword;
    }
    : pattern {

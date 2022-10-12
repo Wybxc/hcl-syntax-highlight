@@ -28,7 +28,7 @@
       <array> 
         <dict>
           <key>begin</key>
-          <string>(wordsig|boolsig|quote)</string>
+          <string>(\b(wordsig|boolsig|quote)\b)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -57,7 +57,7 @@
         </dict>
         <dict>
           <key>begin</key>
-          <string>(word|bool)</string>
+          <string>(\b(word|bool)\b)</string>
           <key>beginCaptures</key>
           <dict>
             <key>1</key>
@@ -100,7 +100,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(in)</string>
+          <string>(\bin\b)</string>
           <key>name</key>
           <string>keyword.hcl</string>
         </dict>
@@ -299,7 +299,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(in)</string>
+          <string>(\bin\b)</string>
           <key>name</key>
           <string>keyword.hcl</string>
         </dict>
